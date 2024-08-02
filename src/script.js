@@ -1,4 +1,4 @@
-const clientId = "";
+const clientId = "16d807650a134e54ae7cf5830863ab50";
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
@@ -22,7 +22,7 @@ export async function redirectToAuthCodeFlow(clientId) {
   const params = new URLSearchParams();
   params.append("client_id", clientId);
   params.append("response_type", "code");
-  params.append("redirect_uri", "http://localhost:5173/callback");
+  params.append("redirect_uri", "https://alexopyrchal8.github.io/");
   params.append("scope", "user-read-private user-read-email user-top-read");
   params.append("code_challenge_method", "S256");
   params.append("code_challenge", challenge);

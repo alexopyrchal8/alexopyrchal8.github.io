@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Tracks Receipt</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .receipt {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .receipt-header {
+            text-align: center;
+            border-bottom: 1px dashed #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .receipt-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .receipt-header p {
+            margin: 5px 0;
+        }
+        .track-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .track-item {
+            margin-bottom: 15px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+        }
+        .list-header {
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000;
+        }
+        .track-name {
+            font-weight: bold;
+        }
+        .track-artist {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .receipt-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            border-top: 1px dashed #000;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="receipt-header">
+            <h1>Spotify Tracks Receipt</h1>
+            <p id="displayName"></p>
+            <p id="date"></p>
+        </div>
+        <ul id="topTracksList" class="track-list"></ul>
+        <ul id="recommendedTracksList" class="track-list"></ul>
+        <div class="receipt-footer">
+            <p>Thank you for using Spotify!</p>
+            <p id="id"></p>
+        </div>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>
