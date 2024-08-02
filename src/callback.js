@@ -1,5 +1,5 @@
 const clientId = "16d807650a134e54ae7cf5830863ab50"; // Replace with your actual client ID
-const redirectUri = "https://alexopyrchal8.github.io/"; // Update this with your actual redirect URI
+const redirectUri = "http://localhost:5173/callback"; // Update this with your actual redirect URI
 
 const urlParams = new URLSearchParams(window.location.search);
 const code = urlParams.get('code');
